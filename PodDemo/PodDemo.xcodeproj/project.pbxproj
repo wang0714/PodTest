@@ -14,8 +14,6 @@
 		136BE93E20ECA0C000AAB4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136BE93D20ECA0C000AAB4DD /* Assets.xcassets */; };
 		136BE94120ECA0C000AAB4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136BE93F20ECA0C000AAB4DD /* LaunchScreen.storyboard */; };
 		136BE94420ECA0C000AAB4DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 136BE94320ECA0C000AAB4DD /* main.m */; };
-		136BE94E20ECA0C000AAB4DD /* PodDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 136BE94D20ECA0C000AAB4DD /* PodDemoTests.m */; };
-		136BE95920ECA0C100AAB4DD /* PodDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 136BE95820ECA0C100AAB4DD /* PodDemoUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +46,7 @@
 		136BE94220ECA0C000AAB4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		136BE94320ECA0C000AAB4DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		136BE94920ECA0C000AAB4DD /* PodDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		136BE94D20ECA0C000AAB4DD /* PodDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodDemoTests.m; sourceTree = "<group>"; };
-		136BE94F20ECA0C000AAB4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		136BE95420ECA0C100AAB4DD /* PodDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		136BE95820ECA0C100AAB4DD /* PodDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodDemoUITests.m; sourceTree = "<group>"; };
-		136BE95A20ECA0C100AAB4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				136BE93020ECA0BE00AAB4DD /* PodDemo */,
-				136BE94C20ECA0C000AAB4DD /* PodDemoTests */,
-				136BE95720ECA0C100AAB4DD /* PodDemoUITests */,
 				136BE92F20ECA0BE00AAB4DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,24 +107,6 @@
 				136BE93A20ECA0BE00AAB4DD /* PodDemo.xcdatamodeld */,
 			);
 			path = PodDemo;
-			sourceTree = "<group>";
-		};
-		136BE94C20ECA0C000AAB4DD /* PodDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				136BE94D20ECA0C000AAB4DD /* PodDemoTests.m */,
-				136BE94F20ECA0C000AAB4DD /* Info.plist */,
-			);
-			path = PodDemoTests;
-			sourceTree = "<group>";
-		};
-		136BE95720ECA0C100AAB4DD /* PodDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				136BE95820ECA0C100AAB4DD /* PodDemoUITests.m */,
-				136BE95A20ECA0C100AAB4DD /* Info.plist */,
-			);
-			path = PodDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				136BE94E20ECA0C000AAB4DD /* PodDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				136BE95920ECA0C100AAB4DD /* PodDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = PodDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = PodDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

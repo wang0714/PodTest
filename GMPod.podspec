@@ -12,13 +12,13 @@ Pod::Spec.new do |s|
   s.name         = "GMPod"	#项目名称
   s.version      = "1.0.0" #当前版本
   s.summary      = "test" #需要写一个简短的描述
-  s.ios.deployment_target = "7.0" #支持的pod最低版本
+  s.ios.deployment_target = "10.0" #支持的pod最低版本
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.homepage     = "https://github.com/wang0714/PodTest"
   s.author       = { "嗯嗯高明" => "184724949@qq.com" }
   s.social_media_url   = "https://weibo.com/u/5646548680"
   s.source       = { :git => "https://github.com/wang0714/PodTest.git", :tag => s.version }
-  s.source_files  = "PodTest", "PodTest/**/*.{h,m}"
+  s.source_files  = "PodDemo/**/*.{h,m}"
   s.requires_arc = true
 
 

@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/wang0714/PodTest"
   s.author       = { "嗯嗯高明" => "184724949@qq.com" }
   s.social_media_url   = "https://weibo.com/u/5646548680"
-  s.source       = { :git => "https://github.com/wang0714/PodTest.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/wang0714/PodTest.git", :tag => "v#{s.version}" }
   s.source_files  = "PodDemo/**/*.{h,m}"
   s.requires_arc = true
 

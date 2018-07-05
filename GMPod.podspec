@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "GMPod"	#项目名称
-  s.version      = "1.0.0" #当前版本
+  s.version      = "1.0.1" #当前版本
   s.summary      = "test" #需要写一个简短的描述
   s.ios.deployment_target = "10.0" #支持的pod最低版本
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
